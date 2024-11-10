@@ -81,7 +81,6 @@ export function _BookOverviewAspect<TBase extends new (...args: any[]) => object
     declare author?: __.Association.to<Author> | null
     declare author_ID?: __.Key<number> | null
     declare descr?: string | null
-    declare price?: number | null
     static readonly kind: "entity" | "type" | "aspect" = 'entity';
     declare static readonly keys: __.KeysOf<BookOverview>;
     declare static readonly elements: __.ElementsOf<BookOverview>;

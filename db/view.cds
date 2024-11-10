@@ -8,5 +8,5 @@ view BookOverviews as
             title,
             author,
             descr,
-            price
+    // price
     };
