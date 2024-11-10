@@ -2,10 +2,10 @@
 spring:
   config.activate.on-profile: default
   sql.init:
-    mode: always
+    mode: never
     schema-locations: classpath:schema-sqlite.sql
   datasource:
-    url: "jdbc:sqlite:file::memory:?cache=shared"
+    url: "jdbc:sqlite:db.sqlite"
     driver-class-name: org.sqlite.JDBC
     hikari:
       maximum-pool-size: 1
